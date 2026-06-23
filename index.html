@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>❤️ Forever Us ❤️</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Segoe UI',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#fff5f7,#ffe4e6,#fdf2f8);
+    color:#444;
+    overflow-x:hidden;
+}
+
+section{
+    padding:60px 10%;
+    text-align:center;
+}
+
+h1,h2{
+    color:#e11d48;
+}
+
+p{
+    margin-top:10px;
+    line-height:1.8;
+}
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+}
+
+.hero h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:1.2rem;
+}
+
+.floating-heart{
+    position:fixed;
+    font-size:20px;
+    animation:float 8s linear infinite;
+    opacity:.7;
+    pointer-events:none;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(100vh);
+        opacity:0;
+    }
+    20%{
+        opacity:1;
+    }
+    100%{
+        transform:translateY(-120px);
+        opacity:0;
+    }
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.card{
+    background:white;
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px) rotate(2deg);
+}
+
+.meter{
+    max-width:700px;
+    margin:30px auto;
+    text-align:left;
+}
+
+.bar{
+    background:#ffd6df;
+    border-radius:20px;
+    overflow:hidden;
+    margin-bottom:15px;
+}
+
+.fill{
+    background:#fb7185;
+    color:white;
+    padding:8px;
+}
+
+.memory{
+    background:white;
+    margin:15px auto;
+    padding:18px;
+    border-radius:15px;
+    max-width:700px;
+    box-shadow:0 5px 15px rgba(0,0,0,.05);
+}
+
+.quote-box{
+    background:white;
+    max-width:700px;
+    margin:auto;
+    padding:30px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+    gap:20px;
+    margin-top:30px;
+}
+
+.stat{
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.love-btn{
+    padding:15px 35px;
+    border:none;
+    background:#e11d48;
+    color:white;
+    border-radius:40px;
+    cursor:pointer;
+    font-size:1rem;
+    margin-top:20px;
+    transition:.3s;
+}
+
+.love-btn:hover{
+    transform:scale(1.08);
+}
+
+.message{
+    margin-top:20px;
+    color:#e11d48;
+    font-size:1.2rem;
+    font-weight:bold;
+}
+
+footer{
+    text-align:center;
+    padding:40px;
+    background:#fff;
+    margin-top:50px;
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+    <h1>❤️ Forever Us ❤️</h1>
+
+    <p>
+        Welcome to the place where every screenshot,
+        every laugh, every late-night chat,
+        and every memory lives forever.
+    </p>
+</section>
+
+<section>
+    <h2>🫶 Meet The Idiots We Love</h2>
+
+    <div class="cards">
+        <div class="card">
+            <h3>😎 The One Who Says</h3>
+            <p>"I'm On The Way"</p>
+            <p>Still at Home.</p>
+        </div>
+
+        <div class="card">
+            <h3>😂 The Laugh Machine</h3>
+            <p>Laughs before finishing the joke.</p>
+        </div>
+
+        <div class="card">
+            <h3>🤓 Assignment Hero</h3>
+            <p>Saves everyone before deadlines.</p>
+        </div>
+
+        <div class="card">
+            <h3>💤 Professional Sleeper</h3>
+            <p>Present physically. Mentally offline.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>💌 Friendship Meter</h2>
+
+    <div class="meter">
+        <div>Trust</div>
+        <div class="bar"><div class="fill" style="width:100%">100%</div></div>
+
+        <div>Memories</div>
+        <div class="bar"><div class="fill" style="width:100%">∞</div></div>
+
+        <div>Support</div>
+        <div class="bar"><div class="fill" style="width:100%">100%</div></div>
+
+        <div>Brain Cells</div>
+        <div class="bar"><div class="fill" style="width:20%">20%</div></div>
+    </div>
+</section>
+
+<section>
+    <h2>📸 Memory Wall</h2>
+
+    <div class="memory">🌟 First Day Together</div>
+    <div class="memory">🌟 First Group Selfie</div>
+    <div class="memory">🌟 First Bunk</div>
+    <div class="memory">🌟 First Project</div>
+    <div class="memory">🌟 First Trip</div>
+    <div class="memory">🌟 Growing Up Together</div>
+</section>
+
+<section>
+    <h2>❤️ Things We Never Say Enough</h2>
+
+    <div class="quote-box">
+        <p>Thank You For Staying.</p>
+        <p>Thank You For Listening.</p>
+        <p>Thank You For Understanding.</p>
+        <p>Thank You For Being Home.</p>
+    </div>
+</section>
+
+<section>
+    <h2>😂 Friend Group Facts</h2>
+
+    <div class="stats">
+        <div class="stat">
+            <h3>127</h3>
+            <p>Assignments Finished</p>
+        </div>
+
+        <div class="stat">
+            <h3>0</h3>
+            <p>Assignments Started Early</p>
+        </div>
+
+        <div class="stat">
+            <h3>12000+</h3>
+            <p>Photos Taken</p>
+        </div>
+
+        <div class="stat">
+            <h3>13</h3>
+            <p>Times We Actually Studied</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>🌙 Late Night Thoughts</h2>
+
+    <div class="quote-box">
+        <p id="quote"></p>
+    </div>
+</section>
+
+<section>
+    <h2>💖 Send Love</h2>
+
+    <button class="love-btn" onclick="sendLove()">
+        ❤️ SEND LOVE ❤️
+    </button>
+
+    <div class="message" id="loveMessage"></div>
+</section>
+
+<section>
+    <h2>🫂 Forever</h2>
+
+    <div class="quote-box">
+        <p>
+            Maybe one day we'll have different jobs,
+            different cities and different lives.
+            But we'll always have these memories,
+            these laughs and each other.
+        </p>
+    </div>
+</section>
+
+<footer>
+    ❤️ Made With Love, Chaos, Tea,
+    Last-Minute Assignments and Friendship ❤️
+</footer>
+
+<script>
+
+const quotes=[
+"One day these moments will become stories.",
+"Some people become memories. You became family.",
+"We came for education. We stayed for friendship.",
+"We survived with screenshots and teamwork.",
+"No matter where life goes, we'll remember this."
+];
+
+let index=0;
+
+function changeQuote(){
+    document.getElementById("quote").innerText=quotes[index];
+    index=(index+1)%quotes.length;
+}
+
+changeQuote();
+setInterval(changeQuote,3000);
+
+function sendLove(){
+
+    document.getElementById("loveMessage").innerHTML=
+    "❤️ You Are Loved. You Matter. Always. ❤️";
+
+    for(let i=0;i<25;i++){
+
+        let heart=document.createElement("div");
+        heart.innerHTML="❤️";
+        heart.classList.add("floating-heart");
+
+        heart.style.left=Math.random()*100+"vw";
+        heart.style.fontSize=(20+Math.random()*25)+"px";
+
+        document.body.appendChild(heart);
+
+        setTimeout(()=>{
+            heart.remove();
+        },8000);
+    }
+}
+
+</script>
+
+</body>
+</html>
